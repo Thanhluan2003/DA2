@@ -1,0 +1,963 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>791</width>
+    <height>793</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>761</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="title">
+     <string>Xử lý ảnh</string>
+    </property>
+    <widget class="QPushButton" name="bt_CanBangHistogram">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>260</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Cân bằng histogram</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="ln_c">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>110</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="ln_threshold">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>180</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lb_bytheamount_5">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>110</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&gt;0 tăng; &lt;0 giảm</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lb_bytheamount_3">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>140</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Độ tương phản:</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_Histogram_Gray">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>220</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Vẽ histogram ảnh xám</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_HisSlide_Color">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>100</y>
+       <width>101</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Xử lý ảnh màu</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lb_bytheamount_7">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>180</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&gt;n trắng; &lt; n đen</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="ln_filename">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>40</y>
+       <width>451</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_Browse">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>40</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>choose</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_Negative_Color">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>70</y>
+       <width>101</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Xử lý ảnh màu</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_BienDoiTuyenTinh">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>260</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Biến đổi tuyến tính histogram</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lb_bytheamount_6">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>140</y>
+       <width>121</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&gt;1 tăng; 0 &lt; c &lt; 1 giảm</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_HisSlide_Gray">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>100</y>
+       <width>101</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Xử lý ảnh xám</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lb_filename">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>40</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>FileName:</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_Contrast_Color">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>130</y>
+       <width>101</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Xử lý ảnh màu</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_Sequential_Threshold_Gray">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>160</y>
+       <width>101</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Giải thuật tuần tự</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_Otsu_Threshold_Gray">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>190</y>
+       <width>101</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Giải thuật Otsu</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_Histogram_Color">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>220</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Vẽ histogram ảnh màu</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_Contrast_Gray">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>130</y>
+       <width>101</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Xử lý ảnh xám</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lb_bytheamount_2">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>110</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Mức sáng:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lb_bytheamount_4">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>180</y>
+       <width>71</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Chọn ngưỡng:</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_Negative_Gray">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>70</y>
+       <width>101</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Xử lý ảnh xám</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="ln_contrast">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>140</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_Threshold_Gray">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>172</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Xử lý phân ngưỡng</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lb_bytheamount">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>80</y>
+       <width>71</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ảnh âm bản:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lb_bytheamount_8">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>300</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Kích thước mặt nạ:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lb_bytheamount_9">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>340</y>
+       <width>61</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Tỷ lệ nhiễu:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="ln_kichthuocmatna">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>300</y>
+       <width>41</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="ln_tylenhieu">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>340</y>
+       <width>41</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_loctrungbinh">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>300</y>
+       <width>91</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Lọc trung bình</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_loctrungvi">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>300</y>
+       <width>91</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Lọc trung vị</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_themnhieumuoitieu">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>340</y>
+       <width>111</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Thêm nhiễu ảnh xám</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_nhieumuoitieuanhmau">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>340</y>
+       <width>111</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Thêm nhiễu ảnh màu</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_LocGradient_AnhXam">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>380</y>
+       <width>81</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Lọc gradient</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_23">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>380</y>
+       <width>81</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Lọc Robert</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_24">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>380</y>
+       <width>81</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Lọc Sobel</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_25">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>380</y>
+       <width>81</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Lọc Prewitt</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_26">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>380</y>
+       <width>81</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Lọc Laplace</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_LocGradient_AnhMau">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>420</y>
+       <width>121</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Lọc gradient ảnh màu</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_LocRobert_AnhMau">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>420</y>
+       <width>121</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Lọc Robert ảnh màu</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_LocSobel_AnhMau">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>420</y>
+       <width>121</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Lọc Sobel ảnh màu</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_LocPrewitt_AnhMau_2">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>420</y>
+       <width>121</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Lọc Prewitt ảnh màu</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_LocLaplace_AnhMau_3">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>420</y>
+       <width>121</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Lọc Laplace ảnh màu</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_AnMon">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>460</y>
+       <width>121</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ăn Mòn</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_GianNo">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>460</y>
+       <width>121</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Giản Nở</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_MoAnh">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>460</y>
+       <width>121</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Open</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bt_close">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>460</y>
+       <width>121</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Close</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>520</y>
+      <width>761</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Xử lý 2 ảnh</string>
+    </property>
+    <widget class="QLineEdit" name="ln_filename_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>451</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="ln_filename_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>451</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_14">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>40</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Chọn ảnh 1</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_15">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>70</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Chọn ảnh 2</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>110</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Opacity ảnh 1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>140</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Opacity ảnh 2</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="ln_c_4">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>110</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="ln_c_5">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>140</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_16">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>120</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Cộng 2 ảnh</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_17">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>120</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Trừ 2 ảnh</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>791</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuHistogram">
+    <property name="title">
+     <string>Biểu đồ</string>
+    </property>
+    <addaction name="actionShow_Histogram_Gray_Image"/>
+    <addaction name="separator"/>
+    <addaction name="actionShow_Histogram_Color_Image"/>
+    <addaction name="actionHistogram_Side"/>
+    <addaction name="actionHistogram_Stretch"/>
+   </widget>
+   <widget class="QMenu" name="menuAnalysis">
+    <property name="title">
+     <string>Biên</string>
+    </property>
+    <addaction name="actionRobert_Filter"/>
+   </widget>
+   <widget class="QMenu" name="menuEnhancement">
+    <property name="title">
+     <string>Enhancement</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuMorphology">
+    <property name="title">
+     <string>Mờ ảnh</string>
+    </property>
+    <addaction name="actionDilation"/>
+    <addaction name="actionErosion"/>
+   </widget>
+   <widget class="QMenu" name="menuLogic">
+    <property name="title">
+     <string>Ánh sáng</string>
+    </property>
+    <addaction name="actionNOT"/>
+    <addaction name="actionAdd"/>
+   </widget>
+   <widget class="QMenu" name="menuAction">
+    <property name="title">
+     <string>Xử Lí Nhiễu</string>
+    </property>
+    <addaction name="imageLabel"/>
+    <addaction name="actionNhi_u_nh_m_u"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuLogic"/>
+   <addaction name="menuHistogram"/>
+   <addaction name="menuAnalysis"/>
+   <addaction name="menuMorphology"/>
+   <addaction name="menuAction"/>
+   <addaction name="menuEnhancement"/>
+  </widget>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Mở</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+     <underline>true</underline>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Lưu</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+     <underline>true</underline>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Thoát</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+     <underline>true</underline>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actionShow_Histogram_Gray_Image">
+   <property name="text">
+    <string>Hiển thị biểu đồ (ảnh đen trắng)</string>
+   </property>
+  </action>
+  <action name="actionShow_Histogram_Color_Image">
+   <property name="text">
+    <string>Hiển thị biểu đồ  (ảnh màu)</string>
+   </property>
+  </action>
+  <action name="actionHistogram_Side">
+   <property name="text">
+    <string>Biểu đồ màu</string>
+   </property>
+  </action>
+  <action name="actionHistogram_Stretch">
+   <property name="text">
+    <string>Hiển thị ảnh xám</string>
+   </property>
+  </action>
+  <action name="actionRobert_Filter">
+   <property name="text">
+    <string>Phát hiện biên</string>
+   </property>
+  </action>
+  <action name="actionDilation">
+   <property name="text">
+    <string>Mờ Sáng</string>
+   </property>
+  </action>
+  <action name="actionErosion">
+   <property name="text">
+    <string>Mờ Đen</string>
+   </property>
+  </action>
+  <action name="actionNOT">
+   <property name="text">
+    <string>Tương phản xám</string>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+  </action>
+  <action name="actionAdd">
+   <property name="text">
+    <string>Thêm sáng</string>
+   </property>
+  </action>
+  <action name="imageLabel">
+   <property name="text">
+    <string>Nhiễu ảnh xám</string>
+   </property>
+  </action>
+  <action name="actionNhi_u_nh_m_u">
+   <property name="text">
+    <string>Nhiễu ảnh màu</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,536 @@
+/********************************************************************************
+** Form generated from reading UI file 'mainwindow.ui'
+**
+** Created by: Qt User Interface Compiler version 5.0.1
+**
+** WARNING! All changes made in this file will be lost when recompiling UI file!
+********************************************************************************/
+
+#ifndef UI_MAINWINDOW_H
+#define UI_MAINWINDOW_H
+
+#include <QtCore/QVariant>
+#include <QtWidgets/QAction>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QGroupBox>
+#include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QMainWindow>
+#include <QtWidgets/QMenu>
+#include <QtWidgets/QMenuBar>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QStatusBar>
+#include <QtWidgets/QToolBar>
+#include <QtWidgets/QWidget>
+
+QT_BEGIN_NAMESPACE
+
+class Ui_MainWindow
+{
+public:
+    QAction *actionOpen;
+    QAction *actionSave;
+    QAction *actionExit;
+    QAction *actionShow_Histogram_Gray_Image;
+    QAction *actionShow_Histogram_Color_Image;
+    QAction *actionHistogram_Side;
+    QAction *actionHistogram_Stretch;
+    QAction *actionHistogram_Equalization;
+    QAction *actionLinear_Modilication;
+    QAction *actionGradient_Filter;
+    QAction *actionRobert_Filter;
+    QAction *actionSobel_Filter;
+    QAction *actionMean_Filter_Gray;
+    QAction *actionMean_Filter_Color;
+    QAction *actionMeidan_Filter_Gray;
+    QAction *actionMedian_Filter_Color;
+    QAction *actionDilation;
+    QAction *actionErosion;
+    QAction *actionClose;
+    QAction *actionOpen_2;
+    QAction *actionNOT;
+    QAction *actionAdd;
+    QAction *actionSubtract;
+    QAction *actionactionOtsu_Threshold;
+    QAction *actionactionErosion;
+    QAction *actionactionDilation;
+    QWidget *centralWidget;
+    QGroupBox *groupBox;
+    QPushButton *bt_CanBangHistogram;
+    QLineEdit *ln_c;
+    QLineEdit *ln_threshold;
+    QLabel *lb_bytheamount_5;
+    QLabel *lb_bytheamount_3;
+    QPushButton *bt_Histogram_Gray;
+    QPushButton *bt_HisSlide_Color;
+    QLabel *lb_bytheamount_7;
+    QLineEdit *ln_filename;
+    QPushButton *bt_Browse;
+    QPushButton *bt_Negative_Color;
+    QPushButton *bt_BienDoiTuyenTinh;
+    QLabel *lb_bytheamount_6;
+    QPushButton *bt_HisSlide_Gray;
+    QLabel *lb_filename;
+    QPushButton *bt_Contrast_Color;
+    QPushButton *bt_Sequential_Threshold_Gray;
+    QPushButton *bt_Otsu_Threshold_Gray;
+    QPushButton *bt_Histogram_Color;
+    QPushButton *bt_Contrast_Gray;
+    QLabel *lb_bytheamount_2;
+    QLabel *lb_bytheamount_4;
+    QPushButton *bt_Negative_Gray;
+    QLineEdit *ln_contrast;
+    QPushButton *bt_Threshold_Gray;
+    QLabel *lb_bytheamount;
+    QLabel *lb_bytheamount_8;
+    QLabel *lb_bytheamount_9;
+    QLineEdit *ln_kichthuocmatna;
+    QLineEdit *ln_tylenhieu;
+    QPushButton *bt_loctrungbinh;
+    QPushButton *bt_loctrungvi;
+    QPushButton *bt_themnhieumuoitieu;
+    QPushButton *bt_nhieumuoitieuanhmau;
+    QPushButton *bt_LocGradient_AnhXam;
+    QPushButton *pushButton_23;
+    QPushButton *pushButton_24;
+    QPushButton *pushButton_25;
+    QPushButton *pushButton_26;
+    QPushButton *bt_LocGradient_AnhMau;
+    QPushButton *bt_LocRobert_AnhMau;
+    QPushButton *bt_LocSobel_AnhMau;
+    QPushButton *bt_LocPrewitt_AnhMau_2;
+    QPushButton *bt_LocLaplace_AnhMau_3;
+    QPushButton *bt_AnMon;
+    QPushButton *bt_GianNo;
+    QPushButton *bt_MoAnh;
+    QPushButton *bt_close;
+    QGroupBox *groupBox_2;
+    QLineEdit *ln_filename_2;
+    QLineEdit *ln_filename_3;
+    QPushButton *pushButton_14;
+    QPushButton *pushButton_15;
+    QLabel *label;
+    QLabel *label_2;
+    QLineEdit *ln_c_4;
+    QLineEdit *ln_c_5;
+    QPushButton *pushButton_16;
+    QPushButton *pushButton_17;
+    QMenuBar *menuBar;
+    QMenu *menuFile;
+    QMenu *menuHistogram;
+    QMenu *menuAnalysis;
+    QMenu *menuEnhancement;
+    QMenu *menuMorphology;
+    QMenu *menuLogic;
+    QMenu *menuAction;
+    QToolBar *mainToolBar;
+    QStatusBar *statusBar;
+
+    void setupUi(QMainWindow *MainWindow)
+    {
+        if (MainWindow->objectName().isEmpty())
+            MainWindow->setObjectName(QStringLiteral("MainWindow"));
+        MainWindow->resize(791, 793);
+        actionOpen = new QAction(MainWindow);
+        actionOpen->setObjectName(QStringLiteral("actionOpen"));
+        actionSave = new QAction(MainWindow);
+        actionSave->setObjectName(QStringLiteral("actionSave"));
+        actionExit = new QAction(MainWindow);
+        actionExit->setObjectName(QStringLiteral("actionExit"));
+        actionShow_Histogram_Gray_Image = new QAction(MainWindow);
+        actionShow_Histogram_Gray_Image->setObjectName(QStringLiteral("actionShow_Histogram_Gray_Image"));
+        actionShow_Histogram_Color_Image = new QAction(MainWindow);
+        actionShow_Histogram_Color_Image->setObjectName(QStringLiteral("actionShow_Histogram_Color_Image"));
+        actionHistogram_Side = new QAction(MainWindow);
+        actionHistogram_Side->setObjectName(QStringLiteral("actionHistogram_Side"));
+        actionHistogram_Stretch = new QAction(MainWindow);
+        actionHistogram_Stretch->setObjectName(QStringLiteral("actionHistogram_Stretch"));
+        actionHistogram_Equalization = new QAction(MainWindow);
+        actionHistogram_Equalization->setObjectName(QStringLiteral("actionHistogram_Equalization"));
+        actionLinear_Modilication = new QAction(MainWindow);
+        actionLinear_Modilication->setObjectName(QStringLiteral("actionLinear_Modilication"));
+        actionGradient_Filter = new QAction(MainWindow);
+        actionGradient_Filter->setObjectName(QStringLiteral("actionGradient_Filter"));
+        actionRobert_Filter = new QAction(MainWindow);
+        actionRobert_Filter->setObjectName(QStringLiteral("actionRobert_Filter"));
+        actionSobel_Filter = new QAction(MainWindow);
+        actionSobel_Filter->setObjectName(QStringLiteral("actionSobel_Filter"));
+        actionMean_Filter_Gray = new QAction(MainWindow);
+        actionMean_Filter_Gray->setObjectName(QStringLiteral("actionMean_Filter_Gray"));
+        actionMean_Filter_Color = new QAction(MainWindow);
+        actionMean_Filter_Color->setObjectName(QStringLiteral("actionMean_Filter_Color"));
+        actionMeidan_Filter_Gray = new QAction(MainWindow);
+        actionMeidan_Filter_Gray->setObjectName(QStringLiteral("actionMeidan_Filter_Gray"));
+        actionMedian_Filter_Color = new QAction(MainWindow);
+        actionMedian_Filter_Color->setObjectName(QStringLiteral("actionMedian_Filter_Color"));
+        actionDilation = new QAction(MainWindow);
+        actionDilation->setObjectName(QStringLiteral("actionDilation"));
+        actionErosion = new QAction(MainWindow);
+        actionErosion->setObjectName(QStringLiteral("actionErosion"));
+        actionClose = new QAction(MainWindow);
+        actionClose->setObjectName(QStringLiteral("actionClose"));
+        actionOpen_2 = new QAction(MainWindow);
+        actionOpen_2->setObjectName(QStringLiteral("actionOpen_2"));
+        actionNOT = new QAction(MainWindow);
+        actionNOT->setObjectName(QStringLiteral("actionNOT"));
+        actionAdd = new QAction(MainWindow);
+        actionAdd->setObjectName(QStringLiteral("actionAdd"));
+        actionSubtract = new QAction(MainWindow);
+        actionSubtract->setObjectName(QStringLiteral("actionSubtract"));
+        actionactionOtsu_Threshold = new QAction(MainWindow);
+        actionactionOtsu_Threshold->setObjectName(QStringLiteral("actionactionOtsu_Threshold"));
+        actionactionErosion = new QAction(MainWindow);
+        actionactionErosion->setObjectName(QStringLiteral("actionactionErosion"));
+        actionactionDilation = new QAction(MainWindow);
+        actionactionDilation->setObjectName(QStringLiteral("actionactionDilation"));
+        centralWidget = new QWidget(MainWindow);
+        centralWidget->setObjectName(QStringLiteral("centralWidget"));
+        groupBox = new QGroupBox(centralWidget);
+        groupBox->setObjectName(QStringLiteral("groupBox"));
+        groupBox->setGeometry(QRect(10, 10, 761, 501));
+        bt_CanBangHistogram = new QPushButton(groupBox);
+        bt_CanBangHistogram->setObjectName(QStringLiteral("bt_CanBangHistogram"));
+        bt_CanBangHistogram->setGeometry(QRect(450, 260, 121, 21));
+        ln_c = new QLineEdit(groupBox);
+        ln_c->setObjectName(QStringLiteral("ln_c"));
+        ln_c->setGeometry(QRect(120, 110, 113, 20));
+        ln_threshold = new QLineEdit(groupBox);
+        ln_threshold->setObjectName(QStringLiteral("ln_threshold"));
+        ln_threshold->setGeometry(QRect(120, 180, 113, 20));
+        lb_bytheamount_5 = new QLabel(groupBox);
+        lb_bytheamount_5->setObjectName(QStringLiteral("lb_bytheamount_5"));
+        lb_bytheamount_5->setGeometry(QRect(260, 110, 91, 20));
+        lb_bytheamount_3 = new QLabel(groupBox);
+        lb_bytheamount_3->setObjectName(QStringLiteral("lb_bytheamount_3"));
+        lb_bytheamount_3->setGeometry(QRect(30, 140, 81, 20));
+        bt_Histogram_Gray = new QPushButton(groupBox);
+        bt_Histogram_Gray->setObjectName(QStringLiteral("bt_Histogram_Gray"));
+        bt_Histogram_Gray->setGeometry(QRect(190, 220, 121, 21));
+        bt_HisSlide_Color = new QPushButton(groupBox);
+        bt_HisSlide_Color->setObjectName(QStringLiteral("bt_HisSlide_Color"));
+        bt_HisSlide_Color->setGeometry(QRect(590, 100, 101, 23));
+        lb_bytheamount_7 = new QLabel(groupBox);
+        lb_bytheamount_7->setObjectName(QStringLiteral("lb_bytheamount_7"));
+        lb_bytheamount_7->setGeometry(QRect(260, 180, 91, 20));
+        ln_filename = new QLineEdit(groupBox);
+        ln_filename->setObjectName(QStringLiteral("ln_filename"));
+        ln_filename->setGeometry(QRect(120, 40, 451, 20));
+        bt_Browse = new QPushButton(groupBox);
+        bt_Browse->setObjectName(QStringLiteral("bt_Browse"));
+        bt_Browse->setGeometry(QRect(590, 40, 75, 23));
+        bt_Negative_Color = new QPushButton(groupBox);
+        bt_Negative_Color->setObjectName(QStringLiteral("bt_Negative_Color"));
+        bt_Negative_Color->setGeometry(QRect(590, 70, 101, 23));
+        bt_BienDoiTuyenTinh = new QPushButton(groupBox);
+        bt_BienDoiTuyenTinh->setObjectName(QStringLiteral("bt_BienDoiTuyenTinh"));
+        bt_BienDoiTuyenTinh->setGeometry(QRect(160, 260, 151, 21));
+        lb_bytheamount_6 = new QLabel(groupBox);
+        lb_bytheamount_6->setObjectName(QStringLiteral("lb_bytheamount_6"));
+        lb_bytheamount_6->setGeometry(QRect(260, 140, 121, 20));
+        bt_HisSlide_Gray = new QPushButton(groupBox);
+        bt_HisSlide_Gray->setObjectName(QStringLiteral("bt_HisSlide_Gray"));
+        bt_HisSlide_Gray->setGeometry(QRect(470, 100, 101, 23));
+        lb_filename = new QLabel(groupBox);
+        lb_filename->setObjectName(QStringLiteral("lb_filename"));
+        lb_filename->setGeometry(QRect(60, 40, 51, 20));
+        bt_Contrast_Color = new QPushButton(groupBox);
+        bt_Contrast_Color->setObjectName(QStringLiteral("bt_Contrast_Color"));
+        bt_Contrast_Color->setGeometry(QRect(590, 130, 101, 23));
+        bt_Sequential_Threshold_Gray = new QPushButton(groupBox);
+        bt_Sequential_Threshold_Gray->setObjectName(QStringLiteral("bt_Sequential_Threshold_Gray"));
+        bt_Sequential_Threshold_Gray->setGeometry(QRect(590, 160, 101, 23));
+        bt_Otsu_Threshold_Gray = new QPushButton(groupBox);
+        bt_Otsu_Threshold_Gray->setObjectName(QStringLiteral("bt_Otsu_Threshold_Gray"));
+        bt_Otsu_Threshold_Gray->setGeometry(QRect(590, 190, 101, 23));
+        bt_Histogram_Color = new QPushButton(groupBox);
+        bt_Histogram_Color->setObjectName(QStringLiteral("bt_Histogram_Color"));
+        bt_Histogram_Color->setGeometry(QRect(450, 220, 121, 21));
+        bt_Contrast_Gray = new QPushButton(groupBox);
+        bt_Contrast_Gray->setObjectName(QStringLiteral("bt_Contrast_Gray"));
+        bt_Contrast_Gray->setGeometry(QRect(470, 130, 101, 23));
+        lb_bytheamount_2 = new QLabel(groupBox);
+        lb_bytheamount_2->setObjectName(QStringLiteral("lb_bytheamount_2"));
+        lb_bytheamount_2->setGeometry(QRect(60, 110, 51, 20));
+        lb_bytheamount_4 = new QLabel(groupBox);
+        lb_bytheamount_4->setObjectName(QStringLiteral("lb_bytheamount_4"));
+        lb_bytheamount_4->setGeometry(QRect(40, 180, 71, 20));
+        bt_Negative_Gray = new QPushButton(groupBox);
+        bt_Negative_Gray->setObjectName(QStringLiteral("bt_Negative_Gray"));
+        bt_Negative_Gray->setGeometry(QRect(470, 70, 101, 23));
+        ln_contrast = new QLineEdit(groupBox);
+        ln_contrast->setObjectName(QStringLiteral("ln_contrast"));
+        ln_contrast->setGeometry(QRect(120, 140, 113, 20));
+        bt_Threshold_Gray = new QPushButton(groupBox);
+        bt_Threshold_Gray->setObjectName(QStringLiteral("bt_Threshold_Gray"));
+        bt_Threshold_Gray->setGeometry(QRect(470, 172, 101, 31));
+        lb_bytheamount = new QLabel(groupBox);
+        lb_bytheamount->setObjectName(QStringLiteral("lb_bytheamount"));
+        lb_bytheamount->setGeometry(QRect(50, 80, 71, 20));
+        lb_bytheamount_8 = new QLabel(groupBox);
+        lb_bytheamount_8->setObjectName(QStringLiteral("lb_bytheamount_8"));
+        lb_bytheamount_8->setGeometry(QRect(50, 300, 91, 20));
+        lb_bytheamount_9 = new QLabel(groupBox);
+        lb_bytheamount_9->setObjectName(QStringLiteral("lb_bytheamount_9"));
+        lb_bytheamount_9->setGeometry(QRect(80, 340, 61, 20));
+        ln_kichthuocmatna = new QLineEdit(groupBox);
+        ln_kichthuocmatna->setObjectName(QStringLiteral("ln_kichthuocmatna"));
+        ln_kichthuocmatna->setGeometry(QRect(150, 300, 41, 20));
+        ln_tylenhieu = new QLineEdit(groupBox);
+        ln_tylenhieu->setObjectName(QStringLiteral("ln_tylenhieu"));
+        ln_tylenhieu->setGeometry(QRect(150, 340, 41, 20));
+        bt_loctrungbinh = new QPushButton(groupBox);
+        bt_loctrungbinh->setObjectName(QStringLiteral("bt_loctrungbinh"));
+        bt_loctrungbinh->setGeometry(QRect(220, 300, 91, 23));
+        bt_loctrungvi = new QPushButton(groupBox);
+        bt_loctrungvi->setObjectName(QStringLiteral("bt_loctrungvi"));
+        bt_loctrungvi->setGeometry(QRect(450, 300, 91, 23));
+        bt_themnhieumuoitieu = new QPushButton(groupBox);
+        bt_themnhieumuoitieu->setObjectName(QStringLiteral("bt_themnhieumuoitieu"));
+        bt_themnhieumuoitieu->setGeometry(QRect(210, 340, 111, 23));
+        bt_nhieumuoitieuanhmau = new QPushButton(groupBox);
+        bt_nhieumuoitieuanhmau->setObjectName(QStringLiteral("bt_nhieumuoitieuanhmau"));
+        bt_nhieumuoitieuanhmau->setGeometry(QRect(440, 340, 111, 23));
+        bt_LocGradient_AnhXam = new QPushButton(groupBox);
+        bt_LocGradient_AnhXam->setObjectName(QStringLiteral("bt_LocGradient_AnhXam"));
+        bt_LocGradient_AnhXam->setGeometry(QRect(40, 380, 81, 23));
+        pushButton_23 = new QPushButton(groupBox);
+        pushButton_23->setObjectName(QStringLiteral("pushButton_23"));
+        pushButton_23->setGeometry(QRect(170, 380, 81, 23));
+        pushButton_24 = new QPushButton(groupBox);
+        pushButton_24->setObjectName(QStringLiteral("pushButton_24"));
+        pushButton_24->setGeometry(QRect(300, 380, 81, 23));
+        pushButton_25 = new QPushButton(groupBox);
+        pushButton_25->setObjectName(QStringLiteral("pushButton_25"));
+        pushButton_25->setGeometry(QRect(430, 380, 81, 23));
+        pushButton_26 = new QPushButton(groupBox);
+        pushButton_26->setObjectName(QStringLiteral("pushButton_26"));
+        pushButton_26->setGeometry(QRect(560, 380, 81, 23));
+        bt_LocGradient_AnhMau = new QPushButton(groupBox);
+        bt_LocGradient_AnhMau->setObjectName(QStringLiteral("bt_LocGradient_AnhMau"));
+        bt_LocGradient_AnhMau->setGeometry(QRect(20, 420, 121, 23));
+        bt_LocRobert_AnhMau = new QPushButton(groupBox);
+        bt_LocRobert_AnhMau->setObjectName(QStringLiteral("bt_LocRobert_AnhMau"));
+        bt_LocRobert_AnhMau->setGeometry(QRect(150, 420, 121, 23));
+        bt_LocSobel_AnhMau = new QPushButton(groupBox);
+        bt_LocSobel_AnhMau->setObjectName(QStringLiteral("bt_LocSobel_AnhMau"));
+        bt_LocSobel_AnhMau->setGeometry(QRect(280, 420, 121, 23));
+        bt_LocPrewitt_AnhMau_2 = new QPushButton(groupBox);
+        bt_LocPrewitt_AnhMau_2->setObjectName(QStringLiteral("bt_LocPrewitt_AnhMau_2"));
+        bt_LocPrewitt_AnhMau_2->setGeometry(QRect(410, 420, 121, 23));
+        bt_LocLaplace_AnhMau_3 = new QPushButton(groupBox);
+        bt_LocLaplace_AnhMau_3->setObjectName(QStringLiteral("bt_LocLaplace_AnhMau_3"));
+        bt_LocLaplace_AnhMau_3->setGeometry(QRect(540, 420, 121, 23));
+        bt_AnMon = new QPushButton(groupBox);
+        bt_AnMon->setObjectName(QStringLiteral("bt_AnMon"));
+        bt_AnMon->setGeometry(QRect(80, 460, 121, 23));
+        bt_GianNo = new QPushButton(groupBox);
+        bt_GianNo->setObjectName(QStringLiteral("bt_GianNo"));
+        bt_GianNo->setGeometry(QRect(210, 460, 121, 23));
+        bt_MoAnh = new QPushButton(groupBox);
+        bt_MoAnh->setObjectName(QStringLiteral("bt_MoAnh"));
+        bt_MoAnh->setGeometry(QRect(340, 460, 121, 23));
+        bt_close = new QPushButton(groupBox);
+        bt_close->setObjectName(QStringLiteral("bt_close"));
+        bt_close->setGeometry(QRect(470, 460, 121, 23));
+        groupBox_2 = new QGroupBox(centralWidget);
+        groupBox_2->setObjectName(QStringLiteral("groupBox_2"));
+        groupBox_2->setGeometry(QRect(10, 520, 761, 191));
+        ln_filename_2 = new QLineEdit(groupBox_2);
+        ln_filename_2->setObjectName(QStringLiteral("ln_filename_2"));
+        ln_filename_2->setGeometry(QRect(20, 40, 451, 20));
+        ln_filename_3 = new QLineEdit(groupBox_2);
+        ln_filename_3->setObjectName(QStringLiteral("ln_filename_3"));
+        ln_filename_3->setGeometry(QRect(20, 70, 451, 20));
+        pushButton_14 = new QPushButton(groupBox_2);
+        pushButton_14->setObjectName(QStringLiteral("pushButton_14"));
+        pushButton_14->setGeometry(QRect(500, 40, 75, 23));
+        pushButton_15 = new QPushButton(groupBox_2);
+        pushButton_15->setObjectName(QStringLiteral("pushButton_15"));
+        pushButton_15->setGeometry(QRect(500, 70, 75, 23));
+        label = new QLabel(groupBox_2);
+        label->setObjectName(QStringLiteral("label"));
+        label->setGeometry(QRect(20, 110, 71, 21));
+        label_2 = new QLabel(groupBox_2);
+        label_2->setObjectName(QStringLiteral("label_2"));
+        label_2->setGeometry(QRect(20, 140, 71, 21));
+        ln_c_4 = new QLineEdit(groupBox_2);
+        ln_c_4->setObjectName(QStringLiteral("ln_c_4"));
+        ln_c_4->setGeometry(QRect(100, 110, 113, 20));
+        ln_c_5 = new QLineEdit(groupBox_2);
+        ln_c_5->setObjectName(QStringLiteral("ln_c_5"));
+        ln_c_5->setGeometry(QRect(100, 140, 113, 20));
+        pushButton_16 = new QPushButton(groupBox_2);
+        pushButton_16->setObjectName(QStringLiteral("pushButton_16"));
+        pushButton_16->setGeometry(QRect(250, 120, 101, 31));
+        pushButton_17 = new QPushButton(groupBox_2);
+        pushButton_17->setObjectName(QStringLiteral("pushButton_17"));
+        pushButton_17->setGeometry(QRect(370, 120, 91, 31));
+        MainWindow->setCentralWidget(centralWidget);
+        menuBar = new QMenuBar(MainWindow);
+        menuBar->setObjectName(QStringLiteral("menuBar"));
+        menuBar->setGeometry(QRect(0, 0, 791, 26));
+        menuFile = new QMenu(menuBar);
+        menuFile->setObjectName(QStringLiteral("menuFile"));
+        menuHistogram = new QMenu(menuBar);
+        menuHistogram->setObjectName(QStringLiteral("menuHistogram"));
+        menuAnalysis = new QMenu(menuBar);
+        menuAnalysis->setObjectName(QStringLiteral("menuAnalysis"));
+        menuEnhancement = new QMenu(menuBar);
+        menuEnhancement->setObjectName(QStringLiteral("menuEnhancement"));
+        menuMorphology = new QMenu(menuBar);
+        menuMorphology->setObjectName(QStringLiteral("menuMorphology"));
+        menuLogic = new QMenu(menuBar);
+        menuLogic->setObjectName(QStringLiteral("menuLogic"));
+        menuAction = new QMenu(menuBar);
+        menuAction->setObjectName(QStringLiteral("menuAction"));
+        MainWindow->setMenuBar(menuBar);
+        mainToolBar = new QToolBar(MainWindow);
+        mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
+        MainWindow->addToolBar(Qt::TopToolBarArea, mainToolBar);
+        statusBar = new QStatusBar(MainWindow);
+        statusBar->setObjectName(QStringLiteral("statusBar"));
+        MainWindow->setStatusBar(statusBar);
+
+        menuBar->addAction(menuFile->menuAction());
+        menuBar->addAction(menuHistogram->menuAction());
+        menuBar->addAction(menuAnalysis->menuAction());
+        menuBar->addAction(menuEnhancement->menuAction());
+        menuBar->addAction(menuMorphology->menuAction());
+        menuBar->addAction(menuLogic->menuAction());
+        menuBar->addAction(menuAction->menuAction());
+        menuFile->addSeparator();
+        menuFile->addAction(actionOpen);
+        menuFile->addAction(actionSave);
+        menuFile->addAction(actionExit);
+        menuHistogram->addAction(actionShow_Histogram_Gray_Image);
+        menuHistogram->addSeparator();
+        menuHistogram->addAction(actionShow_Histogram_Color_Image);
+        menuHistogram->addAction(actionHistogram_Side);
+        menuHistogram->addAction(actionHistogram_Stretch);
+        menuHistogram->addAction(actionHistogram_Equalization);
+        menuHistogram->addAction(actionLinear_Modilication);
+        menuAnalysis->addAction(actionGradient_Filter);
+        menuAnalysis->addAction(actionRobert_Filter);
+        menuAnalysis->addAction(actionSobel_Filter);
+        menuEnhancement->addAction(actionMean_Filter_Gray);
+        menuEnhancement->addAction(actionMean_Filter_Color);
+        menuEnhancement->addAction(actionMeidan_Filter_Gray);
+        menuEnhancement->addAction(actionMedian_Filter_Color);
+        menuMorphology->addAction(actionDilation);
+        menuMorphology->addAction(actionErosion);
+        menuMorphology->addAction(actionClose);
+        menuMorphology->addAction(actionOpen_2);
+        menuLogic->addAction(actionNOT);
+        menuLogic->addAction(actionAdd);
+        menuLogic->addAction(actionSubtract);
+        menuAction->addAction(actionactionOtsu_Threshold);
+        menuAction->addAction(actionactionErosion);
+        menuAction->addAction(actionactionDilation);
+
+        retranslateUi(MainWindow);
+
+        QMetaObject::connectSlotsByName(MainWindow);
+    } // setupUi
+
+    void retranslateUi(QMainWindow *MainWindow)
+    {
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0));
+        actionOpen->setText(QApplication::translate("MainWindow", "Open", 0));
+        actionOpen->setShortcut(QApplication::translate("MainWindow", "Ctrl+O", 0));
+        actionSave->setText(QApplication::translate("MainWindow", "Save", 0));
+        actionSave->setShortcut(QApplication::translate("MainWindow", "Ctrl+S", 0));
+        actionExit->setText(QApplication::translate("MainWindow", "Exit", 0));
+        actionExit->setShortcut(QApplication::translate("MainWindow", "Ctrl+X", 0));
+        actionShow_Histogram_Gray_Image->setText(QApplication::translate("MainWindow", "Show Histogram (Gray Image)", 0));
+        actionShow_Histogram_Color_Image->setText(QApplication::translate("MainWindow", "Show Histogram (Color Image)", 0));
+        actionHistogram_Side->setText(QApplication::translate("MainWindow", "Histogram Side", 0));
+        actionHistogram_Stretch->setText(QApplication::translate("MainWindow", "Histogram Stretch", 0));
+        actionHistogram_Equalization->setText(QApplication::translate("MainWindow", "Histogram Equalization", 0));
+        actionLinear_Modilication->setText(QApplication::translate("MainWindow", "Linear Modilication", 0));
+        actionGradient_Filter->setText(QApplication::translate("MainWindow", "Gradient Filter", 0));
+        actionRobert_Filter->setText(QApplication::translate("MainWindow", "Robert Filter", 0));
+        actionSobel_Filter->setText(QApplication::translate("MainWindow", "Sobel Filter", 0));
+        actionMean_Filter_Gray->setText(QApplication::translate("MainWindow", "Mean Filter(Gray)", 0));
+        actionMean_Filter_Color->setText(QApplication::translate("MainWindow", "Mean Filter(Color)", 0));
+        actionMeidan_Filter_Gray->setText(QApplication::translate("MainWindow", "Meidan Filter(Gray)", 0));
+        actionMedian_Filter_Color->setText(QApplication::translate("MainWindow", "Median Filter(Color)", 0));
+        actionDilation->setText(QApplication::translate("MainWindow", "Dilation", 0));
+        actionErosion->setText(QApplication::translate("MainWindow", "Erosion", 0));
+        actionClose->setText(QApplication::translate("MainWindow", "Close", 0));
+        actionOpen_2->setText(QApplication::translate("MainWindow", "Open", 0));
+        actionNOT->setText(QApplication::translate("MainWindow", "NOT", 0));
+        actionAdd->setText(QApplication::translate("MainWindow", "Add", 0));
+        actionSubtract->setText(QApplication::translate("MainWindow", "Subtract", 0));
+        actionactionOtsu_Threshold->setText(QApplication::translate("MainWindow", "actionOtsu_Threshold", 0));
+        actionactionErosion->setText(QApplication::translate("MainWindow", "actionErosion", 0));
+        actionactionDilation->setText(QApplication::translate("MainWindow", "actionDilation", 0));
+        groupBox->setTitle(QApplication::translate("MainWindow", "X\341\273\255 l\303\275 1 \341\272\243nh", 0));
+        bt_CanBangHistogram->setText(QApplication::translate("MainWindow", "C\303\242n b\341\272\261ng histogram", 0));
+        lb_bytheamount_5->setText(QApplication::translate("MainWindow", ">0 t\304\203ng; <0 gi\341\272\243m", 0));
+        lb_bytheamount_3->setText(QApplication::translate("MainWindow", "\304\220\341\273\231 t\306\260\306\241ng ph\341\272\243n:", 0));
+        bt_Histogram_Gray->setText(QApplication::translate("MainWindow", "V\341\272\275 histogram \341\272\243nh x\303\241m", 0));
+        bt_HisSlide_Color->setText(QApplication::translate("MainWindow", "X\341\273\255 l\303\275 \341\272\243nh m\303\240u", 0));
+        lb_bytheamount_7->setText(QApplication::translate("MainWindow", ">n tr\341\272\257ng; < n \304\221en", 0));
+        bt_Browse->setText(QApplication::translate("MainWindow", "choose", 0));
+        bt_Negative_Color->setText(QApplication::translate("MainWindow", "X\341\273\255 l\303\275 \341\272\243nh m\303\240u", 0));
+        bt_BienDoiTuyenTinh->setText(QApplication::translate("MainWindow", "Bi\341\272\277n \304\221\341\273\225i tuy\341\272\277n t\303\255nh histogram", 0));
+        lb_bytheamount_6->setText(QApplication::translate("MainWindow", ">1 t\304\203ng; 0 < c < 1 gi\341\272\243m", 0));
+        bt_HisSlide_Gray->setText(QApplication::translate("MainWindow", "X\341\273\255 l\303\275 \341\272\243nh x\303\241m", 0));
+        lb_filename->setText(QApplication::translate("MainWindow", "FileName:", 0));
+        bt_Contrast_Color->setText(QApplication::translate("MainWindow", "X\341\273\255 l\303\275 \341\272\243nh m\303\240u", 0));
+        bt_Sequential_Threshold_Gray->setText(QApplication::translate("MainWindow", "Gi\341\272\243i thu\341\272\255t tu\341\272\247n t\341\273\261", 0));
+        bt_Otsu_Threshold_Gray->setText(QApplication::translate("MainWindow", "Gi\341\272\243i thu\341\272\255t Otsu", 0));
+        bt_Histogram_Color->setText(QApplication::translate("MainWindow", "V\341\272\275 histogram \341\272\243nh m\303\240u", 0));
+        bt_Contrast_Gray->setText(QApplication::translate("MainWindow", "X\341\273\255 l\303\275 \341\272\243nh x\303\241m", 0));
+        lb_bytheamount_2->setText(QApplication::translate("MainWindow", "M\341\273\251c s\303\241ng:", 0));
+        lb_bytheamount_4->setText(QApplication::translate("MainWindow", "Ch\341\273\215n ng\306\260\341\273\241ng:", 0));
+        bt_Negative_Gray->setText(QApplication::translate("MainWindow", "X\341\273\255 l\303\275 \341\272\243nh x\303\241m", 0));
+        bt_Threshold_Gray->setText(QApplication::translate("MainWindow", "X\341\273\255 l\303\275 ph\303\242n ng\306\260\341\273\241ng", 0));
+        lb_bytheamount->setText(QApplication::translate("MainWindow", "\341\272\242nh \303\242m b\341\272\243n:", 0));
+        lb_bytheamount_8->setText(QApplication::translate("MainWindow", "K\303\255ch th\306\260\341\273\233c m\341\272\267t n\341\272\241:", 0));
+        lb_bytheamount_9->setText(QApplication::translate("MainWindow", "T\341\273\267 l\341\273\207 nhi\341\273\205u:", 0));
+        bt_loctrungbinh->setText(QApplication::translate("MainWindow", "L\341\273\215c trung b\303\254nh", 0));
+        bt_loctrungvi->setText(QApplication::translate("MainWindow", "L\341\273\215c trung v\341\273\213", 0));
+        bt_themnhieumuoitieu->setText(QApplication::translate("MainWindow", "Th\303\252m nhi\341\273\205u \341\272\243nh x\303\241m", 0));
+        bt_nhieumuoitieuanhmau->setText(QApplication::translate("MainWindow", "Th\303\252m nhi\341\273\205u \341\272\243nh m\303\240u", 0));
+        bt_LocGradient_AnhXam->setText(QApplication::translate("MainWindow", "L\341\273\215c gradient", 0));
+        pushButton_23->setText(QApplication::translate("MainWindow", "L\341\273\215c Robert", 0));
+        pushButton_24->setText(QApplication::translate("MainWindow", "L\341\273\215c Sobel", 0));
+        pushButton_25->setText(QApplication::translate("MainWindow", "L\341\273\215c Prewitt", 0));
+        pushButton_26->setText(QApplication::translate("MainWindow", "L\341\273\215c Laplace", 0));
+        bt_LocGradient_AnhMau->setText(QApplication::translate("MainWindow", "L\341\273\215c gradient \341\272\243nh m\303\240u", 0));
+        bt_LocRobert_AnhMau->setText(QApplication::translate("MainWindow", "L\341\273\215c Robert \341\272\243nh m\303\240u", 0));
+        bt_LocSobel_AnhMau->setText(QApplication::translate("MainWindow", "L\341\273\215c Sobel \341\272\243nh m\303\240u", 0));
+        bt_LocPrewitt_AnhMau_2->setText(QApplication::translate("MainWindow", "L\341\273\215c Prewitt \341\272\243nh m\303\240u", 0));
+        bt_LocLaplace_AnhMau_3->setText(QApplication::translate("MainWindow", "L\341\273\215c Laplace \341\272\243nh m\303\240u", 0));
+        bt_AnMon->setText(QApplication::translate("MainWindow", "\304\202n M\303\262n", 0));
+        bt_GianNo->setText(QApplication::translate("MainWindow", "Gi\341\272\243n N\341\273\237", 0));
+        bt_MoAnh->setText(QApplication::translate("MainWindow", "Open", 0));
+        bt_close->setText(QApplication::translate("MainWindow", "Close", 0));
+        groupBox_2->setTitle(QApplication::translate("MainWindow", "X\341\273\255 l\303\275 2 \341\272\243nh", 0));
+        pushButton_14->setText(QApplication::translate("MainWindow", "Ch\341\273\215n \341\272\243nh 1", 0));
+        pushButton_15->setText(QApplication::translate("MainWindow", "Ch\341\273\215n \341\272\243nh 2", 0));
+        label->setText(QApplication::translate("MainWindow", "Opacity \341\272\243nh 1", 0));
+        label_2->setText(QApplication::translate("MainWindow", "Opacity \341\272\243nh 2", 0));
+        pushButton_16->setText(QApplication::translate("MainWindow", "C\341\273\231ng 2 \341\272\243nh", 0));
+        pushButton_17->setText(QApplication::translate("MainWindow", "Tr\341\273\253 2 \341\272\243nh", 0));
+        menuFile->setTitle(QApplication::translate("MainWindow", "File", 0));
+        menuHistogram->setTitle(QApplication::translate("MainWindow", "Histogram", 0));
+        menuAnalysis->setTitle(QApplication::translate("MainWindow", "Analysis", 0));
+        menuEnhancement->setTitle(QApplication::translate("MainWindow", "Enhancement", 0));
+        menuMorphology->setTitle(QApplication::translate("MainWindow", "Morphology", 0));
+        menuLogic->setTitle(QApplication::translate("MainWindow", "Logic", 0));
+        menuAction->setTitle(QApplication::translate("MainWindow", "Action", 0));
+    } // retranslateUi
+
+};
+
+namespace Ui {
+    class MainWindow: public Ui_MainWindow {};
+} // namespace Ui
+
+QT_END_NAMESPACE
+
+#endif // UI_MAINWINDOW_H
